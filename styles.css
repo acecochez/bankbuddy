@@ -1,0 +1,149 @@
+body {
+	background-color: #1E1E2F;
+	color: #E5E5E5;
+	font-family: Monaco, sans-serif;
+}
+
+/* TOP BAR */
+#head {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #15151F;
+  text-align: center;
+}
+
+.card {
+	font-family: Courier New, sans-serif;
+	background-color: #2A2A3D;
+	margin: auto;
+	text-align: center;
+	margin-top: 7%;
+	width: 50%;
+	height: 500px;
+	box-shadow: 3px 3px 20px #0F0F17;
+	border-radius: 15px;
+}
+
+.field {
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+	width: 200px;
+	background-color: #3B3B51;
+	color: white;
+}
+
+.field::placeholder {
+	color: #6C6C80;
+}
+
+#card-exp, #card-cvc {
+	width: 80px;
+	display: inline;
+}
+
+label {
+	color: #B0B0C3;
+	padding-top: 10px;
+}
+
+#card-exp-label, #card-cvc-label {
+	display: block;
+}
+
+.form-pair {
+  display: grid;
+  grid-template-columns: 25% 60%;
+}
+
+
+#colour {
+	float: left;
+	width: 40%;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background: #3F2B96;
+	background: linear-gradient(100deg,rgba(63, 43, 150, 1) 52%, rgba(168, 192, 255, 1) 65%, rgba(42, 42, 61, 1) 78%);
+	text-align: left;
+	padding-left: 20px;
+	border-radius: 15px;
+}
+
+#form {
+	float: right;
+	width: 50%;
+	text-align: left;
+	margin-top: 10%;
+}
+
+#confirm, #continue {
+	display: block;
+	margin-top: 25px;
+	background-color: rgba(63, 43, 150, 1);
+	color: white;
+	font-family: Verdana, sans-serif;
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 5px;
+	width: 225px;
+}
+
+#confirm:hover {
+	background-color: rgba(168, 192, 255, 1);
+	color: rgba(63, 43, 150, 1);
+	cursor: pointer;
+}
+
+#confirm:disabled {
+	background-color: #B0B0C3;
+	color: white;
+	cursor: not-allowed;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#completed {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	text-align: center;
+}
+
+#completed-card {
+	font-family: Verdana, sans-serif;
+	padding: 25px;
+	height: 30%;
+}
+
+#continue {
+	margin: auto;
+}
+
+/* BOTTOM BAR */
+#attribution {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #15151F;
+  text-align: center;
+	padding: 10px;
+}
+
+#attribution a {
+	color: #7986CB;
+}
